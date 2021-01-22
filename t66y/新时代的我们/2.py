@@ -26,7 +26,7 @@ def get_info(site, titles, links):
         name = i.contents[0].replace('\n', '').replace(
             '\r', '').replace('\t', '')
         titles.append(i.contents[0].replace('\n', '').replace(
-                '\r', '').replace('\t', '')+' '+i.h3.string.replace('?', ''))
+                '\r', '').replace('\t', '')+' '+i.h3.text.replace('?', ''))
         links.append(requestURL + i.a['href'])
 
 
